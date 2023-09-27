@@ -1,0 +1,11 @@
+<title>Hello World</title>
+
+
+<h1>My Google LOgin Project</h1>
+{% if user.is_authenticated %}
+    <p>Welcome {{ user.username }}!</p>
+    <a href="">logout</a>
+{% else %}
+    <a href="">login</a> |
+    <a href="">signup</a>
+{% endif %}
